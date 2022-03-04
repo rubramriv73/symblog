@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}{{blog.title}}{% endblock%}
+
+{% block body %}
+    <header>
+        <h1>{{blog.title}}</h1>
+    </header>
+    <article>
+        <p>{{blog.blog}}</p>
+    </article>
+    {% includes 'comments.html.twig' %}
+{% endblock %}
